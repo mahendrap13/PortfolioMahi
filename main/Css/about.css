@@ -1,0 +1,225 @@
+.main .about {
+  height: auto;
+  background-color: #222;
+  border-radius: 40px;
+  max-width: 1320px;
+}
+
+/* =======================================profile===================================== */
+.main .about .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding: 340px 90px;
+}
+.main .about .profile .my-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .about .profile .profile-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .about .profile .my-img .photo {
+  background-image: url(../images/cesar-rincon-1024x1024.jpg);
+  width: 355px;
+  height: 355px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 18px solid #444444;
+  box-shadow: 0px 0px 30px black;
+}
+
+.main .about .profile .profile-details .details h4 {
+  color: #aaaaaa;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 0 6px 0;
+}
+.main .about .profile .profile-details .details h1 {
+  color: #f5f5f5;
+  font-size: 48px;
+  margin: 0 0 20px 0;
+}
+.main .about .profile .profile-details .details p {
+  color: #d5d5d5;
+  font-size: 15px;
+  margin: 0 0 20px 0;
+  line-height: 22px;
+}
+.main .about .profile .profile-details .details .profile-btn {
+  padding: 18px 0 0 0;
+}
+.main .about .profile .profile-details .details .profile-btn a {
+  color: white;
+  background-color: #333333;
+  padding: 11px 30px;
+  border-radius: 2rem;
+  border: 2px solid #f5f5f5;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+.main .about .profile .profile-details .details .profile-btn .cv {
+  margin: 0 5px 10px 0;
+  border: 2px solid #007ced;
+}
+.main .about .profile .profile-details .details .profile-btn .cv:hover {
+  background-color: #007ced;
+}
+.main .about .profile .profile-details .details .profile-btn .contact {
+  margin: 0 0px 10px 0;
+}
+.main .about .profile .profile-details .details .profile-btn .contact:hover {
+  background-color: #f5f5f5;
+  color: #444444;
+}
+
+/* =======================================what i do===================================== */
+.main .about .what-id-do {
+  padding: 0px 50px;
+}
+
+.main .about .what-id-do .work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+.main .about .what-id-do .work .web {
+  background-color: #333333;
+  padding: 30px 30px;
+  width: 350px;
+  height: 270px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.667);
+  transition: all 0.5s;
+}
+.main .about .what-id-do .work .web:hover {
+  transform: translateY(-10px);
+}
+.main .about .what-id-do .work .web i {
+  color: red;
+  font-size: 35px;
+  margin: 7px 0 10px;
+}
+.main .about .what-id-do .work .web h1 {
+  color: #f5f5f5;
+  font-size: 30px;
+  margin: 10px 0 20px;
+}
+.main .about .what-id-do .work .web p {
+  color: #d5d5d5;
+  font-size: 15px;
+  line-height: 22px;
+}
+/* =======================================Knowledge===================================== */
+
+.main .about .knowledge {
+  overflow: hidden;
+  height: 35vh;
+  padding: 0px 50px;
+}
+.main .about .knowledge .knows {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  padding: 0px 50px;
+  overflow: hidden;
+}
+
+.main .about .knowledge .know {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .about .knowledge .know .imgs {
+  width: 117px;
+  height: 100px;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 7px;
+  border-radius: 6px;
+  transition: all 0.5s;
+}
+.main .about .knowledge .know .imgs .img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+.main .about .knowledge .know .imgs:hover {
+  transform: scale(1.1);
+}
+.main .about .knowledge .know .imgs .img img {
+  width: 100%;
+}
+.main .about .knowledge .know .imgs b {
+  color: white;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .main .about .profile {
+    flex-direction: column;
+    width: 100%;
+    padding: 25px !important;
+    height: auto;
+  }
+  .main .about .profile .my-img {
+    height: auto;
+    width: 100% !important;
+    padding: 25px 0 !important;
+  }
+  .main .about .profile .profile-details {
+    height: auto;
+    width: 100%;
+    padding: 4px 0 !important;
+    text-align: center;
+  }
+  .main .about .profile .my-img .photo {
+    width: 255px;
+    height: 255px;
+  }
+  .main .about .what-id-do {
+    padding: 25px !important;
+    height: auto;
+  }
+  .main .about .knowledge {
+    height: auto;
+    padding: 25px;
+  }
+  .main .about .what-id-do .work .web {
+    width: 100%;
+    padding: 20px;
+  }
+  .main .about .profile .profile-details .details .profile-btn {
+    gap: 5px;
+  }
+  .main .about .profile .profile-details .details .profile-btn a {
+    margin: 5px 0 !important;
+  }
+  .main .about .profile .profile-details .details h1 {
+    font-size: 33px;
+    margin-bottom: 5px;
+  }
+  .main .about .profile .profile-details .details h4 {
+    font-size: 20px;
+  }
+  .main .about .profile .profile-details .details p {
+    font-size: 13px;
+  }
+}

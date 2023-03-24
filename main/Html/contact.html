@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-mahi</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/contact.css">
+    <!-- fontawesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google icon link  -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main">
+        <section class="about">
+            <nav>
+                <div class="left-nav">
+                    <div class="left-in">
+                        <h1>MP</h1>
+                        <h5><span>Mahendra</span> Parihar</h5>
+                    </div>
+                    <div class="bar" id="bar" onclick="mainbar()">
+                        <div class="menu-icon">
+                            <div class="line-1"></div>
+                            <div class="line-2"></div>
+                            <div class="line-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-nav" id="right-nav">
+                    <ul>
+                        <li><a href="../../index.html">About Me</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="contact">
+                <div class="resume-title">
+                    <h1>Contact</h1>
+                </div>
+                <div class="location">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3768.0114457434597!2d72.8649390939184!3d19.194702426533205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDExJzQxLjIiTiA3MsKwNTEnNTQuMyJF!5e0!3m2!1sen!2sin!4v1679247655961!5m2!1sen!2sin"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-details">
+                    <div class="msg-img">
+                        <img src="../images/img-01.png" alt="">
+                    </div>
+                    <div class="inputs">
+                        <h2 class="heading">How Can I Help You?</h2>
+                        <div class="input">
+                            <form name="submit-to-google-sheet" onsubmit="return validate()">
+                                <div class="inp-main">
+                                    <div class="left">
+                                        <div class="inp1">
+                                            <input type="text" name="Name" id="name" autocomplete="off"
+                                                placeholder="Full Name">
+                                            <p class="alert" id="alert-name">Name is required.</p>
+                                        </div>
+                                        <div class="inp1">
+                                            <input type="text" name="Email" id="email" placeholder="E-mail"
+                                                style="text-transform: none;">
+                                            <p class="alert" id="alert-email">E-mail is required.</p>
+                                        </div>
+                                        <div class="inp1">
+                                            <input type="text" name="Subject" id="subject" autocomplete="off"
+                                                placeholder="Subject">
+                                            <p class="alert" id="alert-subject">Subject is required.</p>
+                                        </div>
+                                    </div>
+                                    <div class="right inp1">
+                                        <textarea name="Message" placeholder="Message" id="message" cols="60"
+                                            autocomplete="off" rows="11"></textarea>
+                                        <p class="alert" id="alert-message">Message is required.</p>
+                                    </div>
+                                </div>
+                                <button class="form-submit" name="submit" type="submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="social-icon">
+                    <div class="soci">
+                        <a href=""> linkedin</a>
+                        <div class="soci-img"><img src="../images/linkedin.png" alt=""></div>
+                    </div>
+                    <div class="soci">
+                        <a href="">Twitter</a>
+                        <div class="soci-img"><img src="../images/twitter.png" alt=""></div>
+
+                    </div>
+                    <div class="soci">
+                        <a href=""> Instagram</a>
+                        <div class="soci-img"><img src="../images/instagram.png" alt=""></div>
+
+                    </div>
+                </div>
+                <div class="social">
+                    <p>© 2023 All rights reserved. MP.</p>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
