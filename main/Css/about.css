@@ -2,7 +2,9 @@
   height: auto;
   background-color: #222;
   border-radius: 40px;
-  max-width: 1320px;
+/*   max-width: 1320px; */
+  max-width: auto;
+  
 }
 
 /* =======================================profile===================================== */
