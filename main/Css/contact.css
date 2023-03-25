@@ -25,7 +25,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50vh;
+/*   height: 50vh; */
+  height: auto;
   gap: 30px;
 }
 .contact .contact-details .msg-img {
