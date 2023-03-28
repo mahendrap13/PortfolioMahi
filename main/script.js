@@ -1,3 +1,35 @@
+
+// ==================navbar menu  ====================
+
+function mainbar() {
+  let navbar = document.getElementById("right-nav");
+  navbar.classList.toggle("mahis");
+}
+
+document.querySelector(".menu-icon").addEventListener("click", function () {
+  let lines = document.querySelector(".menu-icon").children;
+  if (lines[0].classList.contains("active")) {
+    for (let i in lines) {
+      lines[i].classList.remove("active");
+      lines[i].classList.add("deactive");
+    }
+  } else {
+    for (let i in lines) {
+      lines[i].classList.remove("deactive");
+      lines[i].classList.add("active");
+    }
+  }
+});
+
+
+
+
+
+
+
+
+
+
 // ==================knowledge linear ====================
 
 function carousel() {
@@ -49,28 +81,6 @@ function carousel() {
   carouselSlider.addEventListener("mouseleave", unhover);
 }
 carousel();
-
-// ==================navbar menu  ====================
-
-function mainbar() {
-  let navbar = document.getElementById("right-nav");
-  navbar.classList.toggle("mahis");
-}
-
-document.querySelector(".menu-icon").addEventListener("click", function () {
-  let lines = document.querySelector(".menu-icon").children;
-  if (lines[0].classList.contains("active")) {
-    for (let i in lines) {
-      lines[i].classList.remove("active");
-      lines[i].classList.add("deactive");
-    }
-  } else {
-    for (let i in lines) {
-      lines[i].classList.remove("deactive");
-      lines[i].classList.add("active");
-    }
-  }
-});
 
 // ======================================validation==============================
 function validate() {
