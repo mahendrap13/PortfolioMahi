@@ -19,6 +19,9 @@
   padding: 50px;
   display: flex;
 }
+.middle .edu-exe .education{
+  width: 50%;
+}
 .middle .edu-exe .education .education-details {
   padding: 0 10px;
 }
